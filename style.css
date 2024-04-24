@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+body,
+.snake {
+  background-color: #414141;
+}
+#game-board {
+  border-radius: 100px;
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  margin: 5px;
+}
+
+.game-border-1 {
+  border: #595f43 solid 10px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 10px #595f43;
+}
+.game-border-2 {
+  border: #abb78a solid 8px;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 10px #abb78a;
+}
+.game-border-3 {
+  border: #8b966c solid 30px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 5px #8b966c;
+}
+#instruction-text {
+  position: absolute;
+  width: 300px;
+  text-align: center;
+  top: 60%;
+  color: #333;
+  padding: 30px;
+  text-transform: capitalize;
+}
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+#score {
+  color: #abb78a;
+}
+
+#highscore {
+  color: #d8ddca;
+  display: none;
+}
+
+#score,
+#highscore {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+.game-border-3,
+#logo {
+  background-color: #c4cfa3;
+}
+
+.snake {
+  border: #5a5a5a 1px dotted;
+}
+
+.food {
+  background-color: #dedede;
+  border: #999 5px solid;
+}
+
+#logo {
+  position: absolute;
+  max-width: 200px;
+}
